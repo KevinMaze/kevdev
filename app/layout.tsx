@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
 import HoverGradientNavBar from "./UI/components/navbar/hover-gradient-nav-bar";
+import { DarkGradientBg } from "@/app/UI/elegant-dark-pattern";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -15,8 +16,10 @@ export default function RootLayout({
     return (
         <html lang="fr">
             <body className="min-h-full flex flex-col">
-                {children}
-                <HoverGradientNavBar />
+                <DarkGradientBg>
+                    {children}
+                    <HoverGradientNavBar />
+                </DarkGradientBg>
             </body>
         </html>
     );
