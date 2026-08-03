@@ -4,16 +4,28 @@
 
 }
 
-@theme inline {
+@theme{
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-
-  }
+@utility my-container {
+  @apply max-w-242
+  ml-auto
+  mr-auto;
 }
 
-body {
+@utility my-grid {
+  @apply grid gap-6
+}
 
+@utility my-section {
+  @apply pt-24 pb-8 pr-0 pl-0
+}
+
+.home__content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+    overflow: hidden;
 }
