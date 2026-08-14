@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
+import { Google_Sans_Flex } from "next/font/google";
 import "./styles/globals.css";
 import HoverGradientNavBar from "./UI/components/navbar/hover-gradient-nav-bar";
 import { DarkGradientBg } from "@/app/UI/elegant-dark-pattern";
+
+const googleSansFlex = Google_Sans_Flex({
+    subsets: ["latin"],
+    variable: "--font-google-sans-flex",
+});
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -14,7 +20,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="fr">
+        <html lang="fr" className={googleSansFlex.variable}>
             <body className="min-h-full flex flex-col">
                 <DarkGradientBg>
                     {children}

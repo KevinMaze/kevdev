@@ -1,31 +1,51 @@
 @import "tailwindcss";
 
 :root {
+    --my-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+}
 
+body {
+    font-family: var(--font-google-sans-flex), sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
 @theme{
+    --shadow: var(--my-shadow);
+    --animate-profile: profile__animate 8s ease-in-out infinite .1s;
+}
 
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }
 
 @utility my-container {
-  @apply max-w-242
-  ml-auto
-  mr-auto;
+    @apply max-w-242
+    ml-auto
+    mr-auto;
 }
 
 @utility my-grid {
-  @apply grid gap-6
+    @apply grid gap-6
 }
 
 @utility my-section {
-  @apply pt-24 pb-8 pr-0 pl-0
+    @apply pt-24 pb-8 pr-0 pl-0
 }
 
-.home__content {
+@utility home__content {
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
-    overflow: hidden;
 }

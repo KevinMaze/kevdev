@@ -1,32 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Social() {
     return (
-        <div className="home__social">
+        <motion.div
+            className="grid grid-cols-[max-content] gap-y-4 justify-self-center"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5 }}
+        >
             <a
                 href="https://www.instagram.com/_kebinu_/"
-                className="home__social-icon"
+                className="text-xl text-white transition-all duration-400 ease-[ease] hover:text-2xl hover:text-purple-400"
                 target="_blank"
                 rel="noreferrer"
             >
-                <i className="uil uil-instagram"></i>
+                <FaInstagram />
             </a>
             <a
                 href="https://github.com/KevinMaze"
-                className="home__social-icon"
+                className="text-xl text-white transition-all duration-400 ease-[ease] hover:text-2xl hover:text-purple-400"
                 target="_blank"
                 rel="noreferrer"
             >
-                <i className="uil uil-github"></i>
+                <FaGithub />
             </a>
             <a
                 href="https://www.linkedin.com/in/k%C3%A9vin-maze-0556b917a/"
-                className="home__social-icon"
+                className="text-xl text-white transition-all duration-400 ease-[ease] hover:text-2xl hover:text-purple-400"
                 target="_blank"
                 rel="noreferrer"
             >
-                <i className="uil uil-linkedin"></i>
+                <FaLinkedinIn />
             </a>
-        </div>
+        </motion.div>
     );
 }
