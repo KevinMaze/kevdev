@@ -13,6 +13,10 @@ body {
 @theme{
     --shadow: var(--my-shadow);
     --animate-profile: profile__animate 8s ease-in-out infinite .1s;
+    --color-container: rgba(255, 255, 255, 0.05);
+    --text-tiny: 0.625rem;
+    --text-small: 0.813rem;
+    --text-normal: 0.938rem;
 }
 
 @keyframes profile__animate {

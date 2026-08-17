@@ -3,6 +3,7 @@ import { Google_Sans_Flex } from "next/font/google";
 import "./styles/globals.css";
 import HoverGradientNavBar from "./UI/components/navbar/hover-gradient-nav-bar";
 import { DarkGradientBg } from "@/app/UI/elegant-dark-pattern";
+import ContentWrapper from "./UI/components/ContentWrapper";
 
 const googleSansFlex = Google_Sans_Flex({
     subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({
         <html lang="fr" className={googleSansFlex.variable}>
             <body className="min-h-full flex flex-col">
                 <DarkGradientBg>
-                    {children}
+                    <ContentWrapper>{children}</ContentWrapper>
                     <HoverGradientNavBar />
                 </DarkGradientBg>
             </body>
