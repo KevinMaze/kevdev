@@ -3,7 +3,7 @@ import Button from "@/app/UI/components/button/Button";
 export default function Data() {
     return (
         // Arrive depuis la droite (x: 100 -> 0).
-        // Pas besoin de "use client" ici : ce composant est importé par page.tsx
+        // Pas besoin de "use client" ici : ce composant est importé par HomeContent.tsx
         // qui porte déjà la directive, donc il est inclus dans le bundle client.
         <motion.div
             className="home__data"

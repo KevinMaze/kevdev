@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Avatar from "@/app/assets/KEVIN-72.jpg";
 import Skills from "./Skills";
 import Parcour from "@/app/about/Parcours";
 import Info from "./Info";
+
+export const metadata: Metadata = {
+    title: "À propos | Kev-Développement",
+    description:
+        "Découvrez le parcours, les compétences et la vision de Kévin Mazé, développeur web freelance.",
+};
 
 export default function About() {
     return (

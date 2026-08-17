@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { StaticImageData } from "next/image";
 import Popotte from "@/app/assets/popotte.jpg";
 import Parrot from "@/app/assets/parrot.jpg";
+
+export const metadata: Metadata = {
+    title: "Portfolio | Kev-Développement",
+    description:
+        "Découvrez les projets web récents réalisés par Kévin Mazé, développeur web freelance.",
+};
 
 type PortfolioProject = {
     title: string;
