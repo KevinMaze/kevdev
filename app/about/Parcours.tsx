@@ -127,8 +127,10 @@ export default function Parcours() {
 
     return (
         <section className="my-section" id="parcours">
-            <h2 className="text-3xl text-white text-center">Parcours</h2>
-            <span className="block text-small mb-16 text-center">
+            <h2 className="text-4xl text-white text-center mb-2 font-bold">
+                Parcours
+            </h2>
+            <span className="block text-xl mb-16 text-center">
                 Mon parcours professionnel
             </span>
 

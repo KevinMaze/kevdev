@@ -13,7 +13,7 @@ export default function Data() {
             transition={{ duration: 1.5 }}
         >
             <h1 className="text-6xl mb-2">Kévin Mazé</h1>
-            <h2 className="text-3xl relative pl-20 mb-4 before:absolute before:left-0 before:top-4 before:h-px before:w-[70px] before:bg-white before:content-['']">
+            <h2 className="text-3xl relative pl-20 mb-4 before:absolute before:left-0 before:top-4 before:h-px before:w-17.5 before:bg-white before:content-['']">
                 Développeur Web
             </h2>
             <p className="max-w-100 mb-12">

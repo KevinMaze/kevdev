@@ -8,29 +8,28 @@ export default function About() {
     return (
         <div>
             <section className="my-section" id="about">
-                <h2 className="text-3xl text-white text-center">
-                    {" "}
-                    Présentation{" "}
-                </h2>
-                <span className="block text-small mb-16 text-center">
+                <h1 className="text-4xl text-white text-center mb-2 font-bold">
+                    Présentation
+                </h1>
+                <h2 className="block mb-16 text-center text-xl">
                     Introduction
-                </span>
+                </h2>
 
                 <div className="my-container grid grid-cols-2 items-center gap-x-16">
                     <Image
                         src={Avatar}
                         alt="Avatar du développeur"
-                        className="w-75 rounded-3xl justify-self-center"
+                        className="w-75 rounded-3xl justify-self-center shadow"
                     />
 
-                    <div className="about__data">
+                    <div>
                         <p className="pr-16 mb-4">
                             Dans un monde où le numérique prend de plus en plus
                             de place, un site internet n'est pas négligeable.
                             Visibilité, référencement, publicité, amélioration
                             d'image, communication au plus près du client. Un
                             site internet est un formidable outil pour se faire
-                            connaitre.{" "}
+                            connaitre.
                         </p>
                         <p className="pr-16 mb-4">
                             Fort de mes 15 années d'expérience dans la
