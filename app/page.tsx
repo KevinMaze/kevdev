@@ -3,8 +3,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Social from "./UI/components/Home/Social";
-import Data from "./UI/components/Home/Data";
+import Social from "./home/Social";
+import Data from "./home/Data";
 import Image from "next/image";
 import Avatar from "@/app/assets/KEVIN-71.jpg";
 

@@ -79,10 +79,12 @@ export default function Services() {
     return (
         <div>
             <section className="my-section" id="services">
-                <h2 className="text-3xl text-white text-center">Services</h2>
-                <span className="block text-small mb-16 text-center">
+                <h1 className="text-4xl text-white text-center font-bold">
+                    Services
+                </h1>
+                <h2 className="block text-xl mb-16 text-center">
                     Des prestations adaptées à vos besoins
-                </span>
+                </h2>
 
                 <div className="my-container grid grid-cols-[repeat(3,270px)] justify-center gap-x-[1.8rem] gap-y-6">
                     {services.map((service, index) => (

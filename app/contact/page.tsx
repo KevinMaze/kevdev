@@ -29,12 +29,12 @@ export default function Contact() {
     return (
         <div>
             <section className="my-section" id="contact">
-                <h2 className="text-3xl text-white text-center">
+                <h1 className="text-4xl font-bold text-white text-center">
                     Garder le contact
-                </h2>
-                <span className="block text-small mb-16 text-center">
+                </h1>
+                <h2 className="block text-xl mb-16 text-center">
                     Contactez moi ou demandez votre devis
-                </span>
+                </h2>
 
                 <div className="my-container grid grid-cols-[repeat(2,max-content)] justify-center gap-x-24 pb-12">
                     <div>

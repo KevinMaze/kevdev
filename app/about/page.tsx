@@ -25,18 +25,22 @@ export default function About() {
                     <div>
                         <p className="pr-16 mb-4">
                             Dans un monde où le numérique prend de plus en plus
-                            de place, un site internet n'est pas négligeable.
-                            Visibilité, référencement, publicité, amélioration
-                            d'image, communication au plus près du client. Un
-                            site internet est un formidable outil pour se faire
-                            connaitre.
+                            de place, un site internet n&apos;est pas
+                            négligeable. Visibilité, référencement, publicité,
+                            amélioration d&apos;image, communication au plus
+                            près du client. Un site internet est un formidable
+                            outil pour se faire connaitre.
                         </p>
                         <p className="pr-16 mb-4">
-                            Fort de mes 15 années d'expérience dans la
-                            restauration, une passion pour le monde numérique et
-                            un diplôme obtenu en développement Web, je souhaite
-                            amener mon expertise afin de vous apporter de la
-                            visibilité et renforcer votre entreprise.
+                            Aujourd&apos;hui, l&apos;intelligence artificielle
+                            permet à chacun de générer rapidement un site, même
+                            sans aucune connaissance technique. Mais cette
+                            facilité reste anecdotique face à
+                            l&apos;accompagnement d&apos;un professionnel : une
+                            architecture pensée, un code propre et maintenable,
+                            une expérience utilisateur travaillée et un site
+                            réellement adapté à vos besoins, pas à un simple
+                            modèle générique.
                         </p>
 
                         <Skills />

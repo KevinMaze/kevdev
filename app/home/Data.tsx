@@ -12,14 +12,14 @@ export default function Data() {
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
         >
-            <h1 className="text-6xl mb-2">Kévin Mazé</h1>
+            <h1 className="text-6xl mb-2 font-bold">Kévin Mazé</h1>
             <h2 className="text-3xl relative pl-20 mb-4 before:absolute before:left-0 before:top-4 before:h-px before:w-17.5 before:bg-white before:content-['']">
                 Développeur Web
             </h2>
             <p className="max-w-100 mb-12">
-                Améliorez votre image de marque et votre visibilité sur la
-                toile. <br />
-                Grâce à votre site web… Sur-mesure.
+                Votre visibilité mérite un site pensé avec soin. <br />
+                Sur-mesure, de A à Z, pour une image de marque qui vous
+                ressemble.
             </p>
 
             <Button href="/contact">Me Contacter</Button>

@@ -75,14 +75,19 @@ export default function Portfolio() {
     return (
         <div>
             <section className="my-section" id="portfolio">
-                <h2 className="text-3xl text-white text-center">Portfolio</h2>
-                <span className="block text-small mb-16 text-center">
+                <h1 className="text-4xl text-white text-center font-bold">
+                    Portfolio
+                </h1>
+                <h2 className="block text-xl mb-16 text-center">
                     Projets recents
-                </span>
+                </h2>
 
                 <div className="my-container grid grid-cols-3 gap-x-6">
                     {projects.map((project) => (
-                        <div key={project.title} className={projectContentClass}>
+                        <div
+                            key={project.title}
+                            className={projectContentClass}
+                        >
                             {project.image && (
                                 <div
                                     className={projectImageClass}
