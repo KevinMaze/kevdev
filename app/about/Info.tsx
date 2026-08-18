@@ -24,7 +24,7 @@ export default function Info() {
                     <h3 className="text-small font-medium pb-2">
                         {category.title}
                     </h3>
-                    <div className="flex justify-around">
+                    <div className="flex flex-wrap justify-center gap-x-3 gap-y-1">
                         {category.items.map((item) => (
                             <span key={item} className="text-tiny">
                                 {item}

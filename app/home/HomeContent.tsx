@@ -21,12 +21,13 @@ export default function HomeContent() {
                 viewport={{ once: true }} // l'animation ne se rejoue pas si on rescroll
                 transition={{ duration: 1.5 }} // équivalent de data-aos-duration="1500"
             >
-                <div className="my-container my-grid w-full -translate-y-16">
+                <div className="my-container my-grid w-full lg:-translate-y-16">
                     <div className="home__content my-grid">
                         <Social />
 
                         {/* Arrive depuis le haut (y: -100 -> 0) */}
                         <motion.div
+                            className="max-lg:order-1"
                             initial={{ opacity: 0, y: -100 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -35,7 +36,7 @@ export default function HomeContent() {
                             <Image
                                 src={Avatar}
                                 alt="Avatar"
-                                className="h-90 w-90 object-cover object-center shadow order-1 justify-self-center animate-profile"
+                                className="h-44 w-44 sm:h-64 sm:w-64 lg:h-90 lg:w-90 object-cover object-center shadow order-1 justify-self-center animate-profile"
                             />
                         </motion.div>
 

@@ -77,43 +77,34 @@ const experience: ParcoursItem[] = [
 ];
 
 const tabButtonClass =
-    "text-lg font-medium mx-4 cursor-pointer inline-flex items-center relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[0.1em] after:bg-purple-400 after:opacity-0 after:transition-[opacity,transform] after:duration-300 hover:after:opacity-100 hover:after:translate-y-[0.2rem]";
+    "text-base sm:text-lg font-medium mx-2 sm:mx-4 cursor-pointer inline-flex items-center relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[0.1em] after:bg-purple-400 after:opacity-0 after:transition-[opacity,transform] after:duration-300 hover:after:opacity-100 hover:after:translate-y-[0.2rem]";
 
 function ParcoursRow({ item }: { item: ParcoursItem }) {
-    const content = (
-        <div>
-            <h3 className="text-normal font-medium">{item.title}</h3>
-            <span className="inline-block text-small mb-4">
-                {item.subtitle}
-            </span>
-            <div className="text-small flex items-center gap-1">
-                <Calendar size={14} />
-                {item.calendar}
-            </div>
-        </div>
-    );
-
-    const timeline = (
-        <div>
-            <span className="inline-block w-3.25 h-3.25 bg-neutral-400 rounded-full" />
-            <span className="block w-px h-full bg-neutral-400 translate-x-1.5 -translate-y-1.75" />
-        </div>
-    );
-
     return (
-        <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6">
-            {item.side === "left" ? (
-                <>
-                    {content}
-                    {timeline}
-                </>
-            ) : (
-                <>
-                    <div />
-                    {timeline}
-                    {content}
-                </>
-            )}
+        <div
+            className={`parcours__row ${
+                item.side === "left"
+                    ? "parcours__row--left"
+                    : "parcours__row--right"
+            }`}
+        >
+            <div className="[grid-area:dot]">
+                <span className="inline-block w-3.25 h-3.25 bg-neutral-400 rounded-full" />
+                <span className="block w-px h-full bg-neutral-400 translate-x-1.5 -translate-y-1.75" />
+            </div>
+
+            <div className="[grid-area:content]">
+                <h3 className="text-sm sm:text-normal font-medium">
+                    {item.title}
+                </h3>
+                <span className="inline-block text-xs sm:text-small mb-3 sm:mb-4">
+                    {item.subtitle}
+                </span>
+                <div className="text-xs sm:text-small flex items-center gap-1">
+                    <Calendar size={14} />
+                    {item.calendar}
+                </div>
+            </div>
         </div>
     );
 }
@@ -127,10 +118,10 @@ export default function Parcours() {
 
     return (
         <section className="my-section" id="parcours">
-            <h2 className="text-4xl text-white text-center mb-2 font-bold">
+            <h2 className="text-3xl sm:text-4xl text-white text-center mb-2 font-bold">
                 Parcours
             </h2>
-            <span className="block text-xl mb-16 text-center">
+            <span className="block text-base sm:text-xl mb-10 lg:mb-16 text-center">
                 Mon parcours professionnel
             </span>
 

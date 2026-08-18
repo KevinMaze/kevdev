@@ -15,22 +15,22 @@ export default function About() {
     return (
         <div>
             <section className="my-section" id="about">
-                <h1 className="text-4xl text-white text-center mb-2 font-bold">
+                <h1 className="text-3xl sm:text-4xl text-white text-center mb-2 font-bold">
                     Présentation
                 </h1>
-                <h2 className="block mb-16 text-center text-xl">
+                <h2 className="block mb-10 lg:mb-16 text-center text-base sm:text-xl">
                     Introduction
                 </h2>
 
-                <div className="my-container grid grid-cols-2 items-center gap-x-16">
+                <div className="my-container grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-x-16">
                     <Image
                         src={Avatar}
                         alt="Avatar du développeur"
-                        className="w-75 rounded-3xl justify-self-center shadow"
+                        className="w-48 sm:w-64 lg:w-75 rounded-3xl justify-self-center shadow"
                     />
 
-                    <div>
-                        <p className="pr-16 mb-4">
+                    <div className="text-center lg:text-left">
+                        <p className="pr-0 lg:pr-16 mb-4 text-sm sm:text-base">
                             Dans un monde où le numérique prend de plus en plus
                             de place, un site internet n&apos;est pas
                             négligeable. Visibilité, référencement, publicité,
@@ -38,7 +38,7 @@ export default function About() {
                             près du client. Un site internet est un formidable
                             outil pour se faire connaitre.
                         </p>
-                        <p className="pr-16 mb-4">
+                        <p className="pr-0 lg:pr-16 mb-4 text-sm sm:text-base">
                             Aujourd&apos;hui, l&apos;intelligence artificielle
                             permet à chacun de générer rapidement un site, même
                             sans aucune connaissance technique. Mais cette

@@ -4,7 +4,7 @@ import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 export default function Social() {
     return (
         <motion.div
-            className="grid grid-cols-[max-content] gap-y-5 justify-self-center"
+            className="grid grid-cols-[max-content] gap-y-5 justify-self-center max-lg:order-3 max-lg:grid-flow-col max-lg:grid-cols-none max-lg:gap-x-6 max-lg:gap-y-0 max-lg:mt-2"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

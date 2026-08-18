@@ -6,17 +6,19 @@ export default function Data() {
         // Pas besoin de "use client" ici : ce composant est importé par HomeContent.tsx
         // qui porte déjà la directive, donc il est inclus dans le bundle client.
         <motion.div
-            className="home__data"
+            className="home__data max-lg:order-2 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5 }}
         >
-            <h1 className="text-6xl mb-2 font-bold">Kévin Mazé</h1>
-            <h2 className="text-3xl relative pl-20 mb-4 before:absolute before:left-0 before:top-4 before:h-px before:w-17.5 before:bg-white before:content-['']">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl mb-2 font-bold">
+                Kévin Mazé
+            </h1>
+            <h2 className="text-lg sm:text-xl lg:text-3xl relative pl-0 lg:pl-20 mb-4 max-lg:before:hidden before:absolute before:left-0 before:top-4 before:h-px before:w-17.5 before:bg-white before:content-['']">
                 Développeur Web
             </h2>
-            <p className="max-w-100 mb-12">
+            <p className="max-w-90 sm:max-w-100 mb-6 lg:mb-12 text-sm sm:text-base">
                 Votre visibilité mérite un site pensé avec soin. <br />
                 Sur-mesure, de A à Z, pour une image de marque qui vous
                 ressemble.

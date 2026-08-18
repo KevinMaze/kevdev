@@ -82,14 +82,14 @@ export default function Portfolio() {
     return (
         <div>
             <section className="my-section" id="portfolio">
-                <h1 className="text-4xl text-white text-center font-bold">
+                <h1 className="text-3xl sm:text-4xl text-white text-center font-bold">
                     Portfolio
                 </h1>
-                <h2 className="block text-xl mb-16 text-center">
+                <h2 className="block text-base sm:text-xl mb-10 lg:mb-16 text-center">
                     Projets recents
                 </h2>
 
-                <div className="my-container grid grid-cols-3 gap-x-6">
+                <div className="my-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
                         <div
                             key={project.title}
@@ -105,10 +105,10 @@ export default function Portfolio() {
                             )}
 
                             <div className={projectDataClass}>
-                                <h3 className="text-lg mb-4 font-medium">
+                                <h3 className="text-base sm:text-lg mb-4 font-medium">
                                     {project.title}
                                 </h3>
-                                <p className="text-center text-small px-12 mb-8">
+                                <p className="text-center text-small px-6 sm:px-12 mb-8">
                                     {project.description}
                                 </p>
 

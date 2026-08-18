@@ -29,20 +29,20 @@ export default function ContactContent() {
     return (
         <div>
             <section className="my-section" id="contact">
-                <h1 className="text-4xl font-bold text-white text-center">
+                <h1 className="text-3xl sm:text-4xl font-bold text-white text-center">
                     Garder le contact
                 </h1>
-                <h2 className="block text-xl mb-16 text-center">
+                <h2 className="block text-base sm:text-xl mb-10 lg:mb-16 text-center">
                     Contactez moi ou demandez votre devis
                 </h2>
 
-                <div className="my-container grid grid-cols-[repeat(2,max-content)] justify-center gap-x-24 pb-12">
+                <div className="my-container grid grid-cols-1 lg:grid-cols-[repeat(2,max-content)] justify-center gap-y-12 gap-x-24 pb-12">
                     <div>
-                        <h3 className="text-center text-lg font-medium mb-6">
+                        <h3 className="text-center text-base sm:text-lg font-medium mb-6">
                             Parlez-moi
                         </h3>
 
-                        <div className="grid gap-y-4 grid-cols-[300px]">
+                        <div className="grid gap-y-4 w-full max-w-75 mx-auto lg:mx-0">
                             <div className="bg-container border border-white/10 p-4 rounded-xl text-center">
                                 <Mail
                                     size={32}
@@ -90,11 +90,15 @@ export default function ContactContent() {
                     </div>
 
                     <div>
-                        <h3 className="text-center text-lg font-medium mb-6">
+                        <h3 className="text-center text-base sm:text-lg font-medium mb-6">
                             Décrivez-moi votre projet
                         </h3>
 
-                        <form ref={form} onSubmit={sendEmail} className="w-90">
+                        <form
+                            ref={form}
+                            onSubmit={sendEmail}
+                            className="w-full max-w-90 mx-auto lg:mx-0"
+                        >
                             <fieldset className={formFieldClass}>
                                 <legend className={formLegendClass}>Nom</legend>
                                 <input

@@ -79,18 +79,18 @@ export default function ServicesContent() {
     return (
         <div>
             <section className="my-section" id="services">
-                <h1 className="text-4xl text-white text-center font-bold">
+                <h1 className="text-3xl sm:text-4xl text-white text-center font-bold">
                     Services
                 </h1>
-                <h2 className="block text-xl mb-16 text-center">
+                <h2 className="block text-base sm:text-xl mb-10 lg:mb-16 text-center">
                     Des prestations adaptées à vos besoins
                 </h2>
 
-                <div className="my-container grid grid-cols-[repeat(3,270px)] justify-center gap-x-[1.8rem] gap-y-6">
+                <div className="my-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(3,270px)] justify-center gap-6 lg:gap-x-[1.8rem]">
                     {services.map((service, index) => (
                         <div
                             key={service.title}
-                            className="relative border border-white/10 bg-container pt-24 pb-8 pl-10"
+                            className="relative border border-white/10 bg-container pt-20 sm:pt-24 pb-8 pl-6 sm:pl-10 pr-6 lg:pr-0"
                         >
                             <div>
                                 <service.icon
@@ -121,7 +121,7 @@ export default function ServicesContent() {
                                 }`}
                             >
                                 <div
-                                    className="relative w-125 bg-neutral-900 pt-18 px-10 pb-10 rounded-3xl"
+                                    className="relative w-full max-w-125 bg-neutral-900 pt-14 sm:pt-18 px-6 sm:px-10 pb-8 sm:pb-10 rounded-3xl"
                                     onClick={() => setActiveIndex(null)}
                                 >
                                     <X
@@ -129,10 +129,10 @@ export default function ServicesContent() {
                                         className="absolute top-6 right-6 text-white cursor-pointer"
                                     />
 
-                                    <h3 className="text-2xl mb-4 font-medium text-center">
+                                    <h3 className="text-xl sm:text-2xl mb-4 font-medium text-center">
                                         {service.title}
                                     </h3>
-                                    <p className="text-small px-14 mb-8 text-center">
+                                    <p className="text-small px-2 sm:px-14 mb-8 text-center">
                                         {service.description}
                                     </p>
 

@@ -36,7 +36,10 @@ body {
 @utility my-container {
     @apply max-w-242
     ml-auto
-    mr-auto;
+    mr-auto
+    px-4
+    sm:px-6
+    lg:px-8;
 }
 
 @utility my-grid {
@@ -44,7 +47,31 @@ body {
 }
 
 @utility my-section {
-    @apply pt-24 pb-8 pr-0 pl-0
+    @apply pt-16 sm:pt-20 lg:pt-24 pb-8 pr-0 pl-0
+}
+
+@utility parcours__row {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "dot content";
+    column-gap: 0.75rem;
+    align-items: start;
+}
+
+@utility parcours__row--left {
+    @media (width >= 64rem) {
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-areas: "content dot .";
+        column-gap: 1.5rem;
+    }
+}
+
+@utility parcours__row--right {
+    @media (width >= 64rem) {
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-areas: ". dot content";
+        column-gap: 1.5rem;
+    }
 }
 
 @utility home__content {
@@ -52,4 +79,11 @@ body {
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
+
+    @media (max-width: 63.999rem) {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        padding-top: 2rem;
+        justify-items: center;
+    }
 }
