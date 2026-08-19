@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 type PortfolioProject = {
     title: string;
     description: string;
-    codeUrl: string;
+    codeUrl?: string;
     liveUrl?: string;
     image?: StaticImageData;
 };
@@ -26,14 +26,13 @@ const projects: PortfolioProject[] = [
     {
         title: "L'Agora",
         description:
-            "This is a project that I made for my portfolio, it is a website that shows my skills and my most recent projects.",
-        codeUrl: "https://github.com/KevinMaze/agora",
+            "Projet réalisé pour un café / librairie à Nîmes. La demande, un site vitrine mais avec une espace communautaire pour les clients de la librairie.",
+        codeUrl: "",
         liveUrl: "https://lagoranimes.fr",
     },
     {
         title: "La popotte de valou",
-        description:
-            "Site web réalisé pour le restaurant la popotte de valou situé sur Alès dans le gard(30)",
+        description: "Site web réalisé pour un restaurant dans le Gard",
         codeUrl: "https://github.com/KevinMaze/la_popote_de_valou",
         image: Popotte,
     },
@@ -113,9 +112,11 @@ export default function Portfolio() {
                                 </p>
 
                                 <div className="flex flex-col gap-3">
-                                    <ProjectButton href={project.codeUrl}>
-                                        Voir le code
-                                    </ProjectButton>
+                                    {project.codeUrl && (
+                                        <ProjectButton href={project.codeUrl}>
+                                            Voir le code
+                                        </ProjectButton>
+                                    )}
                                     {project.liveUrl && (
                                         <ProjectButton href={project.liveUrl}>
                                             Voir le site

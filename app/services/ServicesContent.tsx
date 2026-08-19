@@ -26,10 +26,10 @@ const services: Service[] = [
         description:
             "Le design de votre site est très important. Il véhicule votre identité, vos valeurs et vous démarque positivement de la concurrence.",
         items: [
-            "Branding afin de cibler au mieux vos besoins",
-            "Création ou utilisation de votre chartre graphique",
-            "Création de l'UI / UX design",
-            "Création de maquettes sur mesure",
+            "Branding afin de cibler au mieux vos besoins.",
+            "Création ou utilisation de votre chartre graphique.",
+            "Création de l'UI / UX design.",
+            "Création de maquettes sur mesure.",
         ],
     },
     {
@@ -39,9 +39,9 @@ const services: Service[] = [
             "Pour la création ou la mise à jour de votre site, je vous accompagne dans votre projet. Le développement de votre site web est réalisé avec soin.",
         items: [
             "Intégration suivant la maquette que vous avez validé.",
-            "Technologie adapté à votre demande. (HTML, React, Symfony...)",
+            "Technologie adapté à votre demande. (HTML, React, Symfony...).",
             "Fonctionnalités spécifiques que vous souhaitez intégrer.",
-            "Dynamisme des pages",
+            "Dynamisme des pages.",
         ],
     },
     {
@@ -50,9 +50,9 @@ const services: Service[] = [
         description:
             "Votre site est développé avec pour objectif d'apparaitre dans les premières pages des moteurs de recherche. Analysons puis optimisons ensemble votre contenu.",
         items: [
-            "Référencement naturel",
-            "Temps de chargement des pages optimisé",
-            "Indexation automatique des pages",
+            "Référencement naturel.",
+            "Temps de chargement des pages optimisé.",
+            "Indexation automatique des pages.",
             "Recherche des mots-clés les plus pertinants.",
             "Intégration des différents réseaux sociaux.",
         ],
